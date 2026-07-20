@@ -62,4 +62,4 @@ for ind, cur_tag in enumerate(tags):
             internships.append(data)
             data = init_internship_data()
 
-save_to_json(internships, 'parsers/data/rostelekom.json')
+save_to_json(internships, 'data/parsed/rostelekom.json')

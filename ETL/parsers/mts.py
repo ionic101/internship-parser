@@ -22,4 +22,4 @@ response = requests.get(
     'https://job.mts.ru/api/v2/catalog/v1/vacancies?professionalRole=v-60377545291333713,it-60376693377859705,v-295882384589619276,v-295882384589602892,v-534648392060502141,v-60378626381578361,v-60378652839247957,v-60378676868415604,backend-295882384589455436,frontend-295882384589471820,ml-295882384589504588,mobile-295882384589488204,v-295882384589520972,v-295882384589537356,v-60377929682518099,v-60377900922175580&isInternship=true&limit=100&offset=0',
     headers=headers,
 )
-save_to_json(response.json()['data'], 'parsers/data/mts.json')
+save_to_json(response.json()['data'], 'data/parsed/mts.json')

@@ -26,4 +26,4 @@ response = requests.get('https://job.beeline.ru/api/v1/vacancies/', params=param
 internships = response.json()['results']
 for data in internships:
     data['link'] = f'https://job.beeline.ru/vacancies/{data['id']}'
-save_to_json(internships, 'parsers/data/beeline.json')
+save_to_json(internships, 'data/parsed/beeline.json')

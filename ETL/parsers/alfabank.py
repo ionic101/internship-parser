@@ -40,4 +40,4 @@ internships = response.json()['data']
 for data in internships:
     data['link'] = f'https://alfabank.ru/alfafuture/ichoosealfa/vacancies/?rp-vacancy={data['uuid']}'
 
-save_to_json(internships, 'parsers/data/alfabank.json')
+save_to_json(internships, 'data/parsed/alfabank.json')

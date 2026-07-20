@@ -26,4 +26,4 @@ soup = bs4.BeautifulSoup(response.text, 'html.parser')
 data = soup.find('script', id='__NEXT_DATA__')
 if not data:
     raise ValueError('Data not found')
-save_to_json(json.loads(data.text), 'parsers/data/vk.json')
+save_to_json(json.loads(data.text), 'data/parsed/vk.json')

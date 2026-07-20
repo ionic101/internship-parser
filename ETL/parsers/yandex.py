@@ -64,4 +64,4 @@ for direction in data['fields']['internships']['directions']:
         del cur_data['stripes']
         internships.append(cur_data)
 
-save_to_json(internships, 'parsers/data/yandex.json')
+save_to_json(internships, 'data/parsed/yandex.json')

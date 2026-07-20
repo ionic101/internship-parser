@@ -69,4 +69,4 @@ def save_to_json(data: list[dict], filename: str) -> None:
         json.dump(data, f, ensure_ascii=False, indent=4)
 
 data = get_internships()
-save_to_json(data, 'parsers/data/kontur.json')
+save_to_json(data, 'data/parsed/kontur.json')

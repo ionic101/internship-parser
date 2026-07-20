@@ -51,5 +51,5 @@ for content in contents:
         else:
             raise ValueError('Unknow version')
 
-save_to_json(internships, 'parsers/data/t-bank.json')
+save_to_json(internships, 'data/parsed/t-bank.json')
 

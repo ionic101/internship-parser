@@ -43,4 +43,4 @@ response = requests.post('https://ozon.tech/p-api/ozon-tech/vacancy/list', cooki
 internships = response.json()['items']
 for data in internships:
     data['link'] = f'https://ozon.tech/vacancies/{data['internal_uuid']}'
-save_to_json(internships, 'parsers/data/ozon.json')
+save_to_json(internships, 'data/parsed/ozon.json')
